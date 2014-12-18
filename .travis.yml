@@ -2,6 +2,8 @@ language: ruby
 script: 'bundle exec rake test:coverage --trace'
 install:
   - bundle install --retry=3
+cache: bundler
+sudo: false
 rvm:
   - 2.0.0
   - 2.1.0
